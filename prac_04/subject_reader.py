@@ -37,5 +37,4 @@ def format_data(data):
         print("{} is taught by {} and has {} students".format(*segment))
 
 
-
 main()
