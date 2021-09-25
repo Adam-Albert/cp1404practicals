@@ -33,7 +33,4 @@ class MilesConverterApp(App):
         self.convert_miles_to_kilometers()
 
 
-
-
-
 MilesConverterApp().run()
