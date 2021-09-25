@@ -5,6 +5,7 @@ MILES_TO_KM = 1.60934
 
 
 class MilesConverterApp(App):
+    """ an app to convert miles to kilometers """
     def build(self):
         """ build the Kivy app from the kv file """
         self.title = "Convert Miles to Kilometres"
@@ -26,6 +27,7 @@ class MilesConverterApp(App):
             return 0
 
     def handle_increment(self, increment):
+        """ increment miles by a chosen value """
         value = self.get_valid_miles() + increment
         self.root.ids.input_miles.text = str(value)
         self.convert_miles_to_kilometers()
